@@ -1,0 +1,5 @@
+[flake8]
+
+ignore = F401
+exclude = .ash_history, .cache, venv, media, .mypy_cache, .idea, alembic/
+max-line-length = 109

@@ -1,30 +1,48 @@
-aiohttp>=3.7.4.post0
+aiohttp==3.8.1
 aiomisc~=9.6.11
-
-aiohttp-apispec==2.2.1
 
 pyyaml==5.4.1
 
+# validation
 marshmallow~=3.13.0
+pydantic==1.9.0
 
-aiohttp-apispec==2.2.1
+# swagger
+aiohttp-apispec==2.2.3
 
 aiohttp-session==2.9.0
 
 cryptography==3.4.7
 
+# tests
 pytest==6.2.4
-
 pytest-aiohttp==0.3.0
 
+# web-server
 gunicorn==20.1.0
 
-psycopg2==2.9.3
 
+# postgres
 asyncpg==0.25.0
+psycopg2-binary==2.9.3
+SQLAlchemy==1.3.14
+gino==1.0.1
 
+# migrations
 alembic==1.7.6
 
-asyncpgsa==0.27.1
+# code style
+flake8==4.0.1
 
-SQLAlchemy==1.3.14
+# socketio
+python-socketio==5.6.0
+
+# jwt
+PyJWT==2.3.0
+
+
+# redis
+aioredis==2.0.1
+
+# loop
+uvloop==0.16.0

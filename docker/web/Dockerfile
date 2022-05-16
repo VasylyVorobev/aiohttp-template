@@ -4,7 +4,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     LANG=C.UTF-8 \
     APP_HOME=/usr/src/app/ \
-    CRYPTOGRAPHY_DONT_BUILD_RUST=1
+    CRYPTOGRAPHY_DONT_BUILD_RUST=1 \
+    PYTHONPATH=/usr/src/app/
 
 WORKDIR $APP_HOME
 
@@ -16,7 +17,5 @@ RUN apk update && \
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r ./requirements.txt
 
-COPY . $APP_HOME
+COPY app/ $APP_HOME
 COPY ./docker/web/entrypoint.sh /
-
-USER $USER

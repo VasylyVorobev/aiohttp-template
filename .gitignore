@@ -4,4 +4,3 @@ venv/
 .coverage
 .coveragerc
 .DS_store
-docker/web/.env
